@@ -1,3 +1,13 @@
 [user]
 	email = chiehmin18@gmail.com
 	name = FatMinMin
+[core]
+	editor = vim
+[oh-my-zsh]
+	hide-status = 1
+[push]
+	default = matching
+[alias]
+	br = branch
+	st = status
+	co = checkout
