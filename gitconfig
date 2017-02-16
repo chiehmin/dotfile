@@ -8,6 +8,13 @@
 [push]
 	default = matching
 [alias]
-	br = branch
 	st = status
+	ci = commit
 	co = checkout
+	br = branch
+	df = diff
+	pick = cherry-pick
+	fp = format-patch
+	la = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	ll = log --graph --decorate --pretty=oneline --abbrev-commit
+	lf = log --stat --decorate --format=fuller --abbrev-commit
