@@ -476,3 +476,8 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 
+" cpp compile
+if "cpp" == expand('%:e') || "c" == expand('%:e')
+	noremap <F7> :! g++ % -o %<
+	noremap <F8> :! ./%<
+endif
