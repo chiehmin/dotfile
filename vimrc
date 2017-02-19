@@ -462,3 +462,17 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+"*****************************************************************************
+"" fatminmin custom options
+"*****************************************************************************
+
+" fold settings
+" http://vim.wikia.com/wiki/Folding
+set foldmethod=syntax
+set foldlevelstart=99
+inoremap <F9> <C-O>za
+nnoremap <F9> za
+onoremap <F9> <C-C>za
+vnoremap <F9> zf
+
