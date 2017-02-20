@@ -485,3 +485,7 @@ endif
 " add newline without entering insert mode
 nmap <S-Enter> O<Esc>
 nmap <CR> o<Esc>
+
+" matching parenthesis
+hi MatchParen cterm=bold,underline ctermbg=none ctermfg=magenta
+
