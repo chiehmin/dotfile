@@ -481,3 +481,7 @@ if "cpp" == expand('%:e') || "c" == expand('%:e')
 	noremap <F7> :! g++ % -o %<
 	noremap <F8> :! ./%<
 endif
+
+" add newline without entering insert mode
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
