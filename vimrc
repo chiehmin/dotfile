@@ -489,3 +489,5 @@ nmap <CR> o<Esc>
 " matching parenthesis
 hi MatchParen cterm=bold,underline ctermbg=none ctermfg=magenta
 
+" 120 for column
+set textwidth=120 colorcolumn=120
