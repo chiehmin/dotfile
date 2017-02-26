@@ -229,7 +229,7 @@ let g:NERDTreeShowBookmarks=1
 let g:nerdtree_tabs_focus_on_files=1
 let g:NERDTreeMapOpenInTabSilent = '<RightMouse>'
 let g:NERDTreeWinSize = 50
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
+set wildignore+=*.so,*.swp,*.zip,*.pyc,*.db,*.sqlite
 nnoremap <silent> <F2> :NERDTreeFind<CR>
 noremap <F3> :NERDTreeToggle<CR>
 
@@ -479,7 +479,7 @@ vnoremap <F9> zf
 " cpp compile
 if "cpp" == expand('%:e') || "c" == expand('%:e')
 	noremap <F7> :! g++ % -o %<
-	noremap <F8> :! ./%<
+	noremap <F8> :! g++ % -o %< && ./%<
 endif
 
 " matching parenthesis
