@@ -41,7 +41,7 @@ Plug 'vim-scripts/CSApprox'
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'Raimondi/delimitMate'
 Plug 'majutsushi/tagbar'
-" Plug 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 
@@ -487,3 +487,14 @@ hi MatchParen cterm=bold,underline ctermbg=none ctermfg=magenta
 
 " 120 for column
 set textwidth=120 colorcolumn=120
+
+" ctags
+noremap <F5> :!ctags -R
+
+" syntastic options
+let g:syntastic_mode_map = {
+	\ "mode": "passive",
+	\ "active_filetypes": [],
+	\ "passive_filetypes": [] }
+
+noremap <F6> :SyntasticToggleMode
