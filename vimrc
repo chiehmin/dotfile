@@ -476,10 +476,13 @@ nnoremap <F9> za
 onoremap <F9> <C-C>za
 vnoremap <F9> zf
 
-" cpp compile
+" c/cpp settings
 if "cpp" == expand('%:e') || "c" == expand('%:e')
+" cpp compile
 	noremap <F7> :! g++ % -o %<
 	noremap <F8> :! g++ % -o %< && ./%<
+" ctags
+	noremap <F5> :!ctags -R
 endif
 
 " matching parenthesis
@@ -488,9 +491,6 @@ hi MatchParen cterm=bold,underline ctermbg=none ctermfg=magenta
 " 120 for column
 set textwidth=120 colorcolumn=120
 
-" ctags
-noremap <F5> :!ctags -R
-
 " syntastic options
 let g:syntastic_mode_map = {
 	\ "mode": "passive",
@@ -498,3 +498,6 @@ let g:syntastic_mode_map = {
 	\ "passive_filetypes": [] }
 
 noremap <F6> :SyntasticToggleMode
+
+" My custom editor shortcut
+nnoremap <leader>; <C-o>A;<C-c>
