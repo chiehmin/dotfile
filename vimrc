@@ -35,7 +35,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/grep.vim'
 Plug 'vim-scripts/CSApprox'
 Plug 'bronson/vim-trailing-whitespace'
@@ -501,3 +501,6 @@ noremap <F6> :SyntasticToggleMode
 
 " My custom editor shortcut
 nnoremap <leader>; <C-o>A;<C-c>
+
+" Set clipboard to system clipboard
+set clipboard=unnamedplus
