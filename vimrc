@@ -479,8 +479,8 @@ vnoremap <F9> zf
 " c/cpp settings
 if "cpp" == expand('%:e') || "c" == expand('%:e')
 " cpp compile
-	noremap <F7> :! g++ % -o %<
-	noremap <F8> :! g++ % -o %< && ./%<
+	noremap <F7> :! g++ -std=c++14 % -o %<
+	noremap <F8> :! g++ -std=c++14 % -o %< && ./%<
 " ctags
 	noremap <F5> :!ctags -R
 endif
@@ -501,3 +501,6 @@ noremap <F6> :SyntasticToggleMode
 
 " My custom editor shortcut
 nnoremap <leader>; <C-o>A;<C-c>
+
+" default complete=.,w,b,u,t,i
+set complete=.,w,b,u,t
