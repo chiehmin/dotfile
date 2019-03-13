@@ -3,6 +3,9 @@
 	name = FatMinMin
 [core]
 	editor = vim
+	abbrev = 12
+[pretty]
+	fixes = Fixes: %h (\"%s\")
 [oh-my-zsh]
 	hide-status = 1
 [push]
