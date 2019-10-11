@@ -20,3 +20,6 @@ do
 	$cmd
 done
 
+# install nvim
+mkdir -p ~/.config/nvim
+install -m644 nvimrc ~/.config/nvim/init.vim
